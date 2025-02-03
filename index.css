@@ -1,0 +1,482 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+nav .nav-hover{
+    background: #007bff; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: translateY(-10px); /* Move the card up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}   
+    
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav .signup-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%; /* Adjust this value to control the image width */
+    background-image: url('doctor and patient 2.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 50%; /* Adjust this value to control the text width */
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero form {
+    display: flex;
+    gap: 10px;
+}
+
+.hero input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: rgb(75, 169, 231);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Styles for Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero::before {
+        width: 100%;
+        height: 50%; /* Adjust this value to control the image height on smaller screens */
+        top: auto;
+        bottom: 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero input {
+        width: 80%;
+    }
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} 
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: all 0.3s ease; /*smooth transition for hover effects*/
+    cursor: pointer; /*change cursor to pointer on hover*/
+}
+
+.card:hover {
+    background: #007bff; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: translateY(-10px); /* Move the card up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.testimonial-card .avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .review p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .rating .stars {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 18px;
+}
+
+.testimonial-card .rating .date {
+    font-size: 14px;
+    color: #666;
+}
+
+.testimonial-card .name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 20px;
+    text-align:start;
+}
+
+.why-choose-us h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.reasons {
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-block: 20%;
+}
+
+.reason {
+    max-width: 200px;
+    text-align:end;
+}
+
+.reason .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.reason p {
+    font-size: 16px;
+}
+
+.learn-more-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1400px) {
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 80%;
+    }
+
+    .reasons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reason {
+        width: 80%;
+    }
+}
+
+.future-health {
+    padding: 60px 0;
+    background-color: #f5faff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.text-content .highlight {
+    color: #007bff; /* Blue color for emphasis */
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.image-content {
+    width: 45%;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+        
+
+
+.newsletter {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+footer .footer-section {
+    max-width: 200px;
+}
+
+footer .footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero input {
+        width: 80%;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-section {
+        margin-bottom: 20px;
+    }
+}
