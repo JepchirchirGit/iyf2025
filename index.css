@@ -1,111 +1,124 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background: #f4f4f4;
-    padding: 20px;
-    text-align: center;
+body {
+    background-color: #f0f8ff;
+    color: #333;
 }
 
-nav {
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 20px 10%;
+    background: white;
 }
-nav .nav-hover{
-    background: #007bff; /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    transform: translateY(-10px); /* Move the card up slightly */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-}   
-    
-nav .logo {
+
+.logo {
     font-size: 24px;
     font-weight: bold;
 }
 
-nav .nav-links {
+.blue-text {
+    color: #007bff;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-nav .nav-links a {
+nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: black;
+    font-size: 16px;
 }
 
-nav .signup-btn {
+.auth-buttons .login,
+.auth-buttons .signup {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.auth-buttons .login {
+    background: none;
+    color: #007bff;
+}
+
+.auth-buttons .signup {
     background: #007bff;
     color: white;
-    padding: 10px 20px;
     border-radius: 5px;
 }
 
+/* Hero Section */
 .hero {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%; /* Adjust this value to control the image width */
-    background-image: url('doctor and patient 2.avif'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background: #dbeafe;
 }
 
 .hero-content {
-    max-width: 50%; /* Adjust this value to control the text width */
+    max-width: 50%;
 }
 
-.hero h1 {
+.hero-content h1 {
     font-size: 36px;
-    margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.hero-content p {
+    margin: 10px 0;
+    font-size: 16px;
 }
 
-.hero form {
+.search-box {
     display: flex;
     gap: 10px;
+    margin: 20px 0;
 }
 
-.hero input {
+.search-box input {
     padding: 10px;
+    width: 200px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 200px;
 }
 
-.hero button {
-    padding: 10px 20px;
+.search-box button {
     background: #007bff;
-    color: rgb(75, 169, 231);
+    color: white;
     border: none;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.stats div {
+    text-align: center;
+    font-size: 18px;
+}
+
+.hero-image img {
+    max-width: 400px;
+}
+
 
 /* Responsive Styles for Hero Section */
 @media (max-width: 768px) {
