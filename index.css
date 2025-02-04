@@ -118,14 +118,14 @@ nav ul li a {
 
 /*hero image*/
 .hero-image {
-    max-width:50%;
+    max-width:40%;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .hero-image img{
-    max-width: 100%;
-    height: 50;
+    max-width: 80%;
+    height: auto;
 }
     
 
@@ -412,6 +412,8 @@ nav ul li a {
 
 .image-content {
     width: 45%;
+    display:flex;
+    justify-content:center
 }
 
 .image-content img {
