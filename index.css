@@ -194,6 +194,28 @@ nav .signup-btn {
     font-size: 32px;
     margin-bottom: 40px;
 }
+.review-avatars{
+    display: flex;
+    align-items: left;
+    justify-content:flex-start;
+    position: relative;
+}
+
+.review-avatars img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: left -10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.review-avatars img:first-child{
+    margin-left: 0;
+}
+.review-avatars img:hover{
+    transform: scale(1.1);
+}
 
 .testimonial-cards {
     display: flex;
@@ -210,6 +232,7 @@ nav .signup-btn {
     max-width: 300px;
     text-align: left;
 }
+
 
 .testimonial-card .avatar img {
     width: 60px;
@@ -247,27 +270,41 @@ nav .signup-btn {
 
 /* Why Choose Us Section */
 .why-choose-us {
-    padding: 50px 20px;
-    text-align:start;
-}
-
-.why-choose-us h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.reasons {
     display: flex;
-    justify-content:space-between;
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
-    margin-block: 20%;
+    padding: 40px;
 }
 
-.reason {
-    max-width: 200px;
-    text-align:end;
+.image-container{
+    flex: 1;
+} 
+
+.image-container img{
+    width: 100%;
+    max: width 400px;
+    border-radius: 10px;
 }
+
+.reasons{
+    flex: 1;
+}
+
+.reasons h2{
+    font-size: 16px;
+}
+
+.reasons ul{
+    list-style: none;
+    padding: 0;
+}
+
+.reasons ul li{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
 
 .reason .icon {
     font-size: 24px;
@@ -275,9 +312,7 @@ nav .signup-btn {
     display: block;
 }
 
-.reason p {
-    font-size: 16px;
-}
+
 
 .learn-more-btn {
     background: #007bff;
