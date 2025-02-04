@@ -15,7 +15,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     padding: 20px 10%;
     background: white;
 }
@@ -63,7 +63,7 @@ nav ul li a {
 /* Hero Section */
 .hero {
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: space-between;
     padding: 50px 10%;
     background: #dbeafe;
@@ -86,11 +86,11 @@ nav ul li a {
 .search-box {
     display: flex;
     gap: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .search-box input {
-    padding: 10px;
+    padding: 30px;
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -100,7 +100,7 @@ nav ul li a {
     background: #007bff;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 30px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -125,15 +125,15 @@ nav ul li a {
 }
 .hero-image img{
     max-width: 100%;
-    height: auto;
+    height: 50;
 }
     
 
 
 /* Responsive Styles for Hero Section */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .hero {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
@@ -314,7 +314,7 @@ nav ul li a {
 }
 
 .reasons h2{
-    font-size: 16px;
+    font-size: 60px;
 }
 
 .reasons ul{
@@ -323,7 +323,7 @@ nav ul li a {
 }
 
 .reasons ul li{
-    font-size: 14px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
